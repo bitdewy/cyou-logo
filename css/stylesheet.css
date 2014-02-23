@@ -199,12 +199,44 @@ header {
   -webkit-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
+.arrow:hover {
+  opacity: 1;
+}
 #arrowLeft {
   left: 45px;
 }
 #arrowRight {
   right: 45px;
   background-position: top right;
+}
+#hint {
+  display: none;
+  bottom: 15%;
+}
+.impress-enabled #hint {
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #EEE;
+  text-align: center;
+  font-size: 1.5em;
+  padding: .5em 0;
+  opacity: 0;
+  -webkit-transition: opacity 1s linear 0.5s;
+  -moz-transition: opacity 1s linear 0.5s;
+  -ms-transition: opacity 1s linear 0.5s;
+  -o-transition: opacity 1s linear 0.5s;
+  transition: opacity 1s linear 0.5s;
+}
+.impress-on-title #hint {
+  opacity: 1;
+  -webkit-transition: opacity 1s linear 2s;
+  -moz-transition: opacity 1s linear 2s;
+  -ms-transition: opacity 1s linear 2s;
+  -o-transition: opacity 1s linear 2s;
+  transition: opacity 1s linear 2s;
 }
 .github {
   left: 45px;
