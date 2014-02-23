@@ -180,3 +180,36 @@ header {
 .step:not(.active) {
     opacity: 0.2;
 }
+
+.arrow {
+	width: 32px;
+	height: 54px;
+	background: url('../img/arrows.png') no-repeat;
+	position: fixed;
+	top: 50%;
+	margin-top: -27px;
+	cursor: pointer;
+	text-indent: -9999px;
+	overflow: hidden;
+	opacity: 0.8;
+	border: none !important;
+	text-decoration: none !important;
+	-moz-transition: 0.2s opacity;
+	-webkit-transition: 0.2s opacity;
+	transition: 0.2s opacity;
+}
+
+#arrowLeft {
+	left: 45px;
+}
+
+#arrowRight {
+	right: 45px;
+	background-position: top right;
+}
+
+.github {
+	left: 45px;
+	bottom: 45px;
+	position: fixed;
+}

@@ -9,26 +9,26 @@ module.exports = (grunt) ->
 				source: "source"
 				build: "build"
 		copy:
-			html:
+			static:
 				files: [
 					expand: true
 					cwd: "<%= config.path.source %>"
-					src: ["*.html"]
+					src: ["**/*.html", "**/*.png"]
 					dest: "<%= config.path.build %>"
 				]
-			js:
+			script:
 				files: [
 					expand: true
-					cwd: "<%= config.path.source %>"
+					cwd: "<%= config.path.source %>/js"
 					src: ["**/*.js"]
-					dest: "<%= config.path.build %>"
+					dest: "<%= config.path.build %>/js"
 				]
 		clean:
 			build:
 				files: [
 					expand: true
 					cwd: "<%= config.path.build %>"
-					src: ["**/*"]
+					src: ["**"]
 					dot: true
 				]
 		less:
