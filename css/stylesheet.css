@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 12px Tahoma, arial, sans-serif;
+}
+header {
+  font-family: "Segoe UI Light", "Segoe UI", "Microsoft Jhenghei", "微软雅黑", sans-serif;
+  color: #666;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+#author {
+  font-size: 0.6em;
+}
+#author a {
+  color: #5FB7E9;
+  text-decoration: none;
+}
+#author a:hover {
+  color: #4B9BC9;
+}
+#cyou {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
+  position: relative;
+  display: block;
+}
+.circle {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  transform-origin: bottom center;
+  -webkit-transform-origin: bottom center;
+}
+.top {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  overflow: hidden;
+}
+.top-left {
+  overflow: hidden;
+  transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+}
+.bottom-left {
+  overflow: hidden;
+  transform: rotate(-120deg);
+  -webkit-transform: rotate(-120deg);
+}
+.bottom {
+  overflow: hidden;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+.bottom-right {
+  overflow: hidden;
+  transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+}
+.top-right {
+  overflow: hidden;
+  transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+}
+.central {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+.leaf {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  transform-origin: bottom center;
+  -webkit-transform-origin: bottom center;
+  transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+}
+.leaf-last {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  transform-origin: bottom center;
+  -webkit-transform-origin: bottom center;
+  transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+}
+.red {
+  background: radial-gradient(bottom center, circle, #ffffff, #e94a41 44%, #e6003c 45%, #bf0008);
+  background: -webkit-radial-gradient(bottom center, circle, #ffffff, #e94a41 44%, #e6003c 45%, #bf0008);
+  background: -moz-radial-gradient(bottom center, circle, #ffffff, #e94a41 44%, #e6003c 45%, #bf0008);
+  background: -ms-radial-gradient(bottom center, circle, #ffffff, #e94a41 44%, #e6003c 45%, #bf0008);
+}
+.orange {
+  background: radial-gradient(bottom center, circle, #ffffff, #eb6400 44%, #f08200 45%, #e8350c);
+  background: -webkit-radial-gradient(bottom center, circle, #ffffff, #eb6400 44%, #f08200 45%, #e8350c);
+  background: -moz-radial-gradient(bottom center, circle, #ffffff, #eb6400 44%, #f08200 45%, #e8350c);
+  background: -ms-radial-gradient(bottom center, circle, #ffffff, #eb6400 44%, #f08200 45%, #e8350c);
+}
+.yellow {
+  background: radial-gradient(bottom center, circle, #ffffff, #fbc703 44%, #ffe100 45%, #ef8300);
+  background: -webkit-radial-gradient(bottom center, circle, #ffffff, #fbc703 44%, #ffe100 45%, #ef8300);
+  background: -moz-radial-gradient(bottom center, circle, #ffffff, #fbc703 44%, #ffe100 45%, #ef8300);
+  background: -ms-radial-gradient(bottom center, circle, #ffffff, #fbc703 44%, #ffe100 45%, #ef8300);
+}
+.green {
+  background: radial-gradient(bottom center, circle, #ffffff, #21ab3c 44%, #8dc21f 45%, #02a23e);
+  background: -webkit-radial-gradient(bottom center, circle, #ffffff, #21ab3c 44%, #8dc21f 45%, #02a23e);
+  background: -moz-radial-gradient(bottom center, circle, #ffffff, #21ab3c 44%, #8dc21f 45%, #02a23e);
+  background: -ms-radial-gradient(bottom center, circle, #ffffff, #21ab3c 44%, #8dc21f 45%, #02a23e);
+}
+.indigo {
+  background: radial-gradient(bottom center, circle, #ffffff, #03a0e8 44%, #0085d0 45%, #0055a7);
+  background: -webkit-radial-gradient(bottom center, circle, #ffffff, #03a0e8 44%, #0085d0 45%, #0055a7);
+  background: -moz-radial-gradient(bottom center, circle, #ffffff, #03a0e8 44%, #0085d0 45%, #0055a7);
+  background: -ms-radial-gradient(bottom center, circle, #ffffff, #03a0e8 44%, #0085d0 45%, #0055a7);
+}
+.blue {
+  background: radial-gradient(bottom center, circle, #ffffff, #3853a2 44%, #374198 45%, #2c1f86);
+  background: -webkit-radial-gradient(bottom center, circle, #ffffff, #3853a2 44%, #374198 45%, #2c1f86);
+  background: -moz-radial-gradient(bottom center, circle, #ffffff, #3853a2 44%, #374198 45%, #2c1f86);
+  background: -ms-radial-gradient(bottom center, circle, #ffffff, #3853a2 44%, #374198 45%, #2c1f86);
+}
+.purple {
+  background: radial-gradient(bottom center, circle, #ffffff, #660099);
+  background: -webkit-radial-gradient(bottom center, circle, #ffffff, #660099);
+  background: -moz-radial-gradient(bottom center, circle, #ffffff, #660099);
+  background: -ms-radial-gradient(bottom center, circle, #ffffff, #660099);
+}
+.small-leaf {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  transform-origin: bottom center;
+  -webkit-transform-origin: bottom center;
+  transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  background-color: white;
+}
+#copyright {
+  margin: 50px 0 0 0;
+  height: 50px;
+  color: #999;
+  font-family: Tahoma;
+  font-size: 12px;
+  text-align: center;
+}
+#copyright a {
+  color: #999;
+  text-decoration: none;
+}
+#copyright a:hover,
+#copyright a:focus {
+  outline: none;
+  text-decoration: underline;
+}
+.step {
+  width: 500px;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+/* fade out inactive slides */
+.step:not(.active) {
+  opacity: 0.2;
+}
+.arrow {
+  width: 32px;
+  height: 54px;
+  background: url('../img/arrows.png') no-repeat;
+  position: fixed;
+  top: 50%;
+  margin-top: -27px;
+  cursor: pointer;
+  text-indent: -9999px;
+  overflow: hidden;
+  opacity: 0.8;
+  border: none !important;
+  text-decoration: none !important;
+  -moz-transition: 0.2s opacity;
+  -webkit-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+#arrowLeft {
+  left: 45px;
+}
+#arrowRight {
+  right: 45px;
+  background-position: top right;
+}
+.github {
+  left: 45px;
+  bottom: 45px;
+  position: fixed;
+}
